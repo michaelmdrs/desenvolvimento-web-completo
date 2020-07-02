@@ -1,14 +1,14 @@
-const saudacao = 'Opa' // contexto léxico
+const saudacao = 'Opa' // contexto léxico Global
 
 function exec() {
     const saudacao = 'Ola' // contexto léxico 2
     return saudacao
 }
 
-//objetos são grupos de pares nome/valor
+//objetos são grupos aninhados de pares nome/valor
 
 const cliente = {
-    nome: 'Nefi',
+    nome: 'Michael',
     idade: 32,
     peso: 80,
     endereco: {
@@ -18,5 +18,5 @@ const cliente = {
 }
 
 console.log(saudacao)
-console.log(exec)
+console.log(exec())
 console.log(cliente)
