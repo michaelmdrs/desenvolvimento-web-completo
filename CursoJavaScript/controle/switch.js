@@ -4,18 +4,22 @@ const imprimirResultado = function (nota) {
         case 9:
             console.log('QUADRO DE HONRA')
             break
-        case 8:
+        case 8: case 7:
             console.log('APROVADO')
             break
-        case 7:
+        case 6: case 5:
             console.log('RECUPERAÇÃO')
             break
-        case 6:
+        case 4: case 3: case 2: case 1: case 0:
             console.log('REPROVADO')
             break
-        case 0:
-            console('ALUNO SEM NOTA!')
+        default:
+            console.log('NOTA INVÁLIDA')
     }
 }
 
-imprimirResultado()
+imprimirResultado(6.8)
+imprimirResultado(8.5)
+imprimirResultado(10)
+imprimirResultado(-1)
+imprimirResultado(3)
