@@ -18,7 +18,7 @@ console.log(obj.falar())
 
 // Passar função como parametro
 function run(fun) {
-    fun // Para invocar uma 
+    fun() // Para invocar uma 
 }
 
 run(function (){ console.log('Execuntado...')})
