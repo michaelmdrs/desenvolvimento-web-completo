@@ -7,5 +7,5 @@ Array.prototype.forEach2 = function(callback) {
 const aprovados = ['Nara', 'Néfi', 'Patricia ', 'Michael']
 
 aprovados.forEach2(function(nome, indice) {
-    console.log(`${indice + 1}) ${nome})
+    console.log(`${indice + 1}) ${nome}`)
 })
