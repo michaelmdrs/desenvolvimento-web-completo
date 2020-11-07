@@ -16,3 +16,9 @@ log()
 log('NodeJS')
 
 // operador rest
+function total(...numero) {
+    let total = 0
+    numero.forEach(n => total += n)
+    return total 
+}
+console.log(total(2, 3, 4, 5))
