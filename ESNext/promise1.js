@@ -6,8 +6,8 @@ const primeiroElemento = string => string[0]
 const primeiraLetra = string => string[0]
 const letraMinuscula = letra => letra.toLowerCase()
 
-let p = new Promise(function(cumprirPromessa) {
-    cumprirPromessa(['Michael', 'Patricia', 'Néfi', 'Nara'])
+let p = new Promise(function(resolve) {
+    resolve(['Michael', 'Patricia', 'Néfi', 'Nara'])
 })  
 
     .then(primeiroElemento)
