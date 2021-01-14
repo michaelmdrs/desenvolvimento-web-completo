@@ -6,7 +6,7 @@ aprovados = ['Nara', 'Néfi', 'Anna'] // Notação literal (Recomendada)
 console.log(aprovados[0])
 console.log(aprovados[1])
 console.log(aprovados[2])
-console.log(aprovados[3]) // Não existe porém o JS retorna valor undefined
+console.log(aprovados[3]) // Não existe  no array porém o JS retorna valor undefined
 
 aprovados[3] = 'Michael' // Adiciona um novo elemento
 aprovados.push('Rebeca') // A forma mais usual para adicionar um valor ao array
