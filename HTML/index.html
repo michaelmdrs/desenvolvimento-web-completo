@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
-    <title>CONHECENDO CSS3</title>
+    <title>Exercícios HTML</title>
 </head>
 <body>
-    <h1>Conhecendo CSS3 - FrontEnd Guide</h1>
-    <hr>
-    <div class="container">
-        <div>
-            <h1>Exemplo 1</h1>
-        </div>
+    <header>
+        Exercícios HTML
+    </header>
+    <nav>
+        <a href="exercicios/teste.html">00 - Teste</a>
+    </nav>
+    <section id="conteudo"></section>
 
-        <div>
-            <h2>Exemplo 2</h2>
-        </div>
-    </div>
+    <footer>
+        Web Moderno - By Michael Santos&copy;
+    </footer>
+
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+
+            link.onclick = function(e) {
+                e.preventDefault()
+                // O Fetch faz a requisição ajax sem depender de outras bibliotecas 
+                fetch(link.href)
+                    .then(resp => resp.text()) // Aqui retorna uma promisse
+                    .then(html => conteudo.innerHTML = html) // Aqui substitui o HTML após a requisição realizada
+            }
+        })
+    </script>
 </body>
 </html>
