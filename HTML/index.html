@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
     <title>Exercícios HTML</title>
 </head>
 <body>
@@ -34,3 +36,20 @@
     </script>
 </body>
 </html>
+
+<!-- Para criar propriedades personalizadas 
+
+document.querySelectorAll('ms-nav').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+
+            link.onclick = function(e) {
+                e.preventDefault()
+                // O Fetch faz a requisição ajax sem depender de outras bibliotecas 
+                fetch(link.getAttribute('ms-nav'))
+                    .then(resp => resp.text()) // Aqui retorna uma promisse
+                    .then(html => conteudo.innerHTML = html) // Aqui substitui o HTML após a requisição realizada
+            }
+        })
+
+
+-->
