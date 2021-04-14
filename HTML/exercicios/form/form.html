@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form method="POST">
+        <input type="hidden" name="id" value="3">
+        <input type="text" name="name">
+        <input type="password" name="pass">
+        <textarea name="bio" cols="30" rows="10"></textarea>
+        <div>
+            <input type="radio" name="tipo" value="admin" required> Admin
+            <input type="radio" name="tipo" value="usuario" required> Usuario
+        </div>
+        <div>
+            <input type="checkbox" name="active" required> Ativo
+        </div>
+
+        <select name="estado" required>
+            <option value="">Selecione</option>
+            <option value="rn">RN</option>
+            <option value="pb">PB</option>
+            <option value="ce">CE</option>
+            <option value="pe">PE</option>
+        </select>
+
+        <select name="interesse" multiple size="5" required>
+            <option value="tecnologia">TI</option>
+            <option value="musica">MÚSICA</option>
+            <option value="teatro">TEATRO</option>
+            <option value="cinema">CINEMA</option>
+            <option value="veterinaria">VETERINÁRIA</option>
+        </select>
+
+        <button formaction="http://localhost:3003/usuarios">Incluir</button>
+        <button formaction="http://localhost:3003/3">Alterar</button>
+    </form>
+</body>
+</html>

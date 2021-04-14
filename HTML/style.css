@@ -53,7 +53,9 @@ tfoot {
     color: #fff;
 }
 
-input, textarea {
+input, 
+textarea,
+select {
     display: block;
     margin-bottom: 10px;
 }
